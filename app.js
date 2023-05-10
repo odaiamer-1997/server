@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const productRoutes = require('./routes/product');
+// const productRoutes = require('./routes/product');
 
 const app = express();
 
@@ -14,6 +14,6 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(productRoutes);
-
+// app.use(productRoutes);
+console.log('Server running');
 app.listen(process.env.PORT || 8080);
