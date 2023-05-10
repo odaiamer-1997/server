@@ -16,4 +16,4 @@ app.use((req, res, next) => {
 
 app.use(productRoutes);
 
-app.listen(8080);
+app.listen(process.env.PORT || 8080);
